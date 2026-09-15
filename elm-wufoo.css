@@ -1,0 +1,16 @@
+#Field426 {
+border: none !important;
+background: transparent !important;
+box-shadow: none !important;
+outline: none !important;
+font-size: 28px !important;
+font-weight: 700 !important;
+padding: 0 !important;
+width: 100% !important;
+pointer-events: none !important;
+caret-color: transparent !important;
+}
+
+#li_426 label.desc {
+display: none !important;
+}
