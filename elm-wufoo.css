@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body,
+.wufoo,
+.wufoo input,
+.wufoo select,
+.wufoo textarea,
+.wufoo button {
+    font-family: 'Inter', Arial, sans-serif !important;
+}
+
 #Field426 {
     border: none !important;
     background: transparent !important;
     box-shadow: none !important;
     outline: none !important;
+    font-family: 'Inter', Arial, sans-serif !important;
     font-size: 28px !important;
     font-weight: 700 !important;
     padding: 0 !important;
