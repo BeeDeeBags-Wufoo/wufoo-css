@@ -1,35 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
 /* =========================================================
-   ELM LIFESTYLE - WUFOO THEME
-   Keeps the existing Wufoo header/banner untouched.
-   Product styling is generic, so adding/removing products
-   should not require CSS changes.
+   EDGE CLOTHING - WUFOO THEME
+   Final base theme for Edge Stock Order Form.
+   Existing Wufoo header/banner is intentionally left untouched.
+   Product styling is generic so adding/removing products does
+   not require CSS changes.
+
+   Store Name field: Field426
    ========================================================= */
 
 :root {
-    --elm-pink: #F16178;
-    --elm-pink-dark: #DE536A;
-    --elm-pink-soft: #FFF1F4;
-    --elm-ink: #252525;
-    --elm-muted: #6E6967;
-    --elm-line: #E7E1DE;
-    --elm-soft: #F8F6F4;
-    --elm-white: #FFFFFF;
+    --edge-black: #111111;
+    --edge-charcoal: #2A2A2A;
+    --edge-grey: #6F6F6F;
+    --edge-line: #E3E3E3;
+    --edge-soft: #F4F4F4;
+    --edge-white: #FFFFFF;
 }
 
+/* PAGE BACKGROUND */
 html,
 body {
-    background: #F7F4F2 !important;
+    background: #F2F2F2 !important;
 }
 
+/* MAIN FORM TYPOGRAPHY */
 .wufoo,
 .wufoo input,
 .wufoo select,
 .wufoo textarea,
 .wufoo button {
-    font-family: 'Inter', Arial, sans-serif !important;
-    color: var(--elm-ink);
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: var(--edge-black);
 }
 
 .wufoo {
@@ -42,17 +43,23 @@ form.wufoo {
     padding-bottom: 36px !important;
 }
 
+/* Remove Wufoo row hover/focus fill */
 .wufoo li.focused,
 .wufoo li:hover {
     background: transparent !important;
+    background-color: transparent !important;
 }
 
-/* Store name heading */
+/* =========================================================
+   STORE NAME HEADING
+   Field426 = Store Name
+   ========================================================= */
+
 #li_426 {
-    margin-top: 6px !important;
-    margin-bottom: 20px !important;
+    margin-top: 8px !important;
+    margin-bottom: 22px !important;
     padding-top: 0 !important;
-    padding-bottom: 8px !important;
+    padding-bottom: 10px !important;
 }
 
 #Field426 {
@@ -61,12 +68,12 @@ form.wufoo {
     background-image: none !important;
     box-shadow: none !important;
     outline: none !important;
-    font-family: 'Inter', Arial, sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif !important;
     font-size: 30px !important;
-    line-height: 1.15 !important;
+    line-height: 1.1 !important;
     font-weight: 700 !important;
     letter-spacing: -0.02em !important;
-    color: var(--elm-ink) !important;
+    color: var(--edge-black) !important;
     padding: 0 !important;
     width: 100% !important;
     pointer-events: none !important;
@@ -78,47 +85,54 @@ label[for="Field426"] {
     display: none !important;
 }
 
-/* Labels */
+/* =========================================================
+   FIELD LABELS
+   ========================================================= */
+
 .wufoo label.desc,
 .wufoo legend.desc {
-    font-family: 'Inter', Arial, sans-serif !important;
-    color: var(--elm-ink) !important;
-    font-size: 14px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: var(--edge-black) !important;
+    font-size: 13px !important;
     line-height: 1.35 !important;
-    font-weight: 600 !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.01em !important;
     padding-bottom: 7px !important;
 }
 
 .wufoo .instruct small,
 .wufoo li div label,
 .wufoo li span label {
-    font-family: 'Inter', Arial, sans-serif !important;
-    color: var(--elm-muted) !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: var(--edge-grey) !important;
 }
 
-/* Text fields, dropdowns and notes */
+/* =========================================================
+   TEXT FIELDS, DROPDOWNS AND NOTES
+   ========================================================= */
+
 .wufoo input.text,
 .wufoo input.search,
 .wufoo input.file,
 .wufoo select.select,
 .wufoo textarea.textarea {
     box-sizing: border-box !important;
-    background: var(--elm-white) !important;
-    border: 1px solid #D8D2CF !important;
-    border-radius: 8px !important;
+    background: var(--edge-white) !important;
+    border: 1px solid #CFCFCF !important;
+    border-radius: 3px !important;
     box-shadow: none !important;
-    color: var(--elm-ink) !important;
+    color: var(--edge-black) !important;
     font-size: 15px !important;
     padding: 10px 12px !important;
-    transition: border-color 0.18s ease, box-shadow 0.18s ease;
+    transition: border-color 0.16s ease, box-shadow 0.16s ease;
 }
 
 .wufoo input.text:focus,
 .wufoo input.search:focus,
 .wufoo select.select:focus,
 .wufoo textarea.textarea:focus {
-    border-color: var(--elm-pink) !important;
-    box-shadow: 0 0 0 3px rgba(241, 97, 120, 0.14) !important;
+    border-color: var(--edge-black) !important;
+    box-shadow: 0 0 0 2px rgba(17,17,17,0.08) !important;
     outline: none !important;
 }
 
@@ -127,58 +141,65 @@ label[for="Field426"] {
     resize: vertical;
 }
 
-/* Product tables */
+/* =========================================================
+   PRODUCT TABLES
+   Generic selectors only.
+   ========================================================= */
+
 .wufoo table {
     width: 100% !important;
     border-collapse: separate !important;
     border-spacing: 0 !important;
-    background: var(--elm-white) !important;
-    border: 1px solid var(--elm-line) !important;
-    border-radius: 12px !important;
+    background: var(--edge-white) !important;
+    border: 1px solid var(--edge-line) !important;
+    border-radius: 8px !important;
     overflow: hidden !important;
-    box-shadow: 0 2px 8px rgba(35, 30, 28, 0.04) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04) !important;
     margin: 8px 0 24px !important;
 }
 
-/* Rounded table header corners so the fill follows the border radius */
+/* Rounded header corners */
 .wufoo table thead tr:first-child th:first-child,
 .wufoo table thead tr:first-child td:first-child {
-    border-top-left-radius: 11px !important;
+    border-top-left-radius: 7px !important;
 }
 
 .wufoo table thead tr:first-child th:last-child,
 .wufoo table thead tr:first-child td:last-child {
-    border-top-right-radius: 11px !important;
+    border-top-right-radius: 7px !important;
 }
 
+/* Rounded bottom corners */
+.wufoo table tbody tr:last-child th:first-child,
+.wufoo table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 7px !important;
+}
+
+.wufoo table tbody tr:last-child th:last-child,
+.wufoo table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 7px !important;
+}
+
+/* Quantity / option headings */
 .wufoo table thead th,
 .wufoo table thead td {
-    background: var(--elm-soft) !important;
-    color: var(--elm-ink) !important;
-    border-color: var(--elm-line) !important;
+    background: #F0F0F0 !important;
+    color: var(--edge-black) !important;
+    border-color: var(--edge-line) !important;
     font-size: 12px !important;
-    font-weight: 600 !important;
-    letter-spacing: 0.01em !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.02em !important;
     padding: 12px 14px !important;
 }
 
+/* Product cells */
 .wufoo table tbody th,
 .wufoo table tbody td {
-    background: var(--elm-white) !important;
-    color: var(--elm-ink) !important;
-    border-color: var(--elm-line) !important;
+    background: var(--edge-white) !important;
+    color: var(--edge-black) !important;
+    border-color: var(--edge-line) !important;
     padding: 18px 14px !important;
     vertical-align: middle !important;
-}
-
-/* Remove Wufoo's hover background from product areas */
-.wufoo table tbody tr:hover,
-.wufoo table tbody tr:hover th,
-.wufoo table tbody tr:hover td,
-.wufoo table tbody th:hover,
-.wufoo table tbody td:hover,
-.wufoo table img:hover {
-    background: var(--elm-white) !important;
 }
 
 .wufoo table th:first-child,
@@ -203,95 +224,157 @@ label[for="Field426"] {
     background: transparent !important;
 }
 
-/* Larger product headings */
+/* Product headings */
 .wufoo table tbody td:first-child strong,
 .wufoo table tbody td:first-child b,
 .wufoo table tbody th:first-child strong,
 .wufoo table tbody th:first-child b {
     display: inline-block !important;
-    color: var(--elm-ink) !important;
+    color: var(--edge-black) !important;
     font-size: 16px !important;
-    line-height: 1.3 !important;
+    line-height: 1.25 !important;
     font-weight: 700 !important;
-    margin-bottom: 2px !important;
+    letter-spacing: 0.005em !important;
+    margin-bottom: 3px !important;
 }
 
-/* Radio buttons / checkboxes */
+/* =========================================================
+   RADIO BUTTONS / CHECKBOXES
+   ========================================================= */
+
 .wufoo input[type="radio"],
 .wufoo input[type="checkbox"] {
-    accent-color: var(--elm-pink);
+    accent-color: var(--edge-black);
     width: 18px !important;
     height: 18px !important;
     cursor: pointer;
 }
 
-/* Section breaks */
+/* =========================================================
+   SECTION BREAKS
+   ========================================================= */
+
 .wufoo .section {
-    border-top: 1px solid var(--elm-line) !important;
+    border-top: 1px solid var(--edge-line) !important;
     margin-top: 28px !important;
     padding-top: 24px !important;
 }
 
 .wufoo .section h3 {
-    color: var(--elm-ink) !important;
+    color: var(--edge-black) !important;
     font-size: 20px !important;
-    line-height: 1.25 !important;
+    line-height: 1.2 !important;
     font-weight: 700 !important;
-    letter-spacing: -0.015em !important;
+    letter-spacing: -0.01em !important;
 }
 
 .wufoo .section div {
-    color: var(--elm-muted) !important;
+    color: var(--edge-grey) !important;
 }
 
-/* Submit button */
+/* =========================================================
+   SUBMIT BUTTON
+   ========================================================= */
+
 .wufoo input.btTxt,
 .wufoo input.submit,
 .wufoo button[type="submit"] {
     appearance: none !important;
     -webkit-appearance: none !important;
-    background: var(--elm-pink) !important;
-    border: 1px solid var(--elm-pink) !important;
-    border-radius: 999px !important;
+    background: var(--edge-black) !important;
+    border: 1px solid var(--edge-black) !important;
+    border-radius: 3px !important;
     box-shadow: none !important;
     color: #FFFFFF !important;
     cursor: pointer !important;
-    font-family: 'Inter', Arial, sans-serif !important;
-    font-size: 14px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 13px !important;
     font-weight: 700 !important;
-    letter-spacing: 0.02em !important;
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
     min-height: 46px !important;
-    padding: 12px 28px !important;
-    transition: background 0.18s ease, border-color 0.18s ease;
+    padding: 12px 30px !important;
+    transition: background 0.16s ease, border-color 0.16s ease;
 }
 
 .wufoo input.btTxt:hover,
 .wufoo input.submit:hover,
 .wufoo button[type="submit"]:hover {
-    background: var(--elm-pink-dark) !important;
-    border-color: var(--elm-pink-dark) !important;
+    background: #333333 !important;
+    border-color: #333333 !important;
 }
 
-/* Errors */
+/* =========================================================
+   ERRORS
+   ========================================================= */
+
 #errorLi {
-    background: var(--elm-pink-soft) !important;
-    border: 1px solid #F3B9C3 !important;
-    border-radius: 10px !important;
-    color: var(--elm-ink) !important;
+    background: #F7F7F7 !important;
+    border: 1px solid #D8D8D8 !important;
+    border-radius: 4px !important;
+    color: var(--edge-black) !important;
 }
 
 .wufoo li.error {
-    background: #FFF6F7 !important;
-    border-radius: 8px !important;
+    background: #FAFAFA !important;
+    border-radius: 3px !important;
 }
 
 .wufoo li.error label.desc,
 .wufoo li.error legend.desc,
 .wufoo li.error .error {
-    color: #B22C44 !important;
+    color: #B00020 !important;
 }
 
-/* Mobile */
+/* =========================================================
+   REMOVE PRODUCT HOVER HIGHLIGHTING
+   ========================================================= */
+
+.wufoo table tbody tr:hover,
+.wufoo table tbody tr:hover th,
+.wufoo table tbody tr:hover td,
+.wufoo table tbody th:hover,
+.wufoo table tbody td:hover,
+.wufoo table tbody td:first-child:hover,
+.wufoo table tbody td:first-child label:hover,
+.wufoo table tbody td:first-child div:hover,
+.wufoo table tbody td:first-child span:hover,
+.wufoo table tbody td:first-child p:hover,
+.wufoo table tbody td:first-child strong:hover,
+.wufoo table tbody td:first-child b:hover,
+.wufoo table tbody td:first-child a:hover,
+.wufoo table img:hover {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.wufoo table tbody td:first-child label,
+.wufoo table tbody td:first-child div,
+.wufoo table tbody td:first-child span,
+.wufoo table tbody td:first-child p,
+.wufoo table tbody td:first-child strong,
+.wufoo table tbody td:first-child b,
+.wufoo table tbody td:first-child a {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* Keep product cells white */
+.wufoo table tbody th,
+.wufoo table tbody td,
+.wufoo table tbody tr:hover th,
+.wufoo table tbody tr:hover td {
+    background-color: #FFFFFF !important;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media screen and (max-width: 700px) {
     html,
     body {
@@ -310,17 +393,27 @@ label[for="Field426"] {
 
     .wufoo table {
         margin-bottom: 18px !important;
-        border-radius: 9px !important;
+        border-radius: 6px !important;
     }
 
     .wufoo table thead tr:first-child th:first-child,
     .wufoo table thead tr:first-child td:first-child {
-        border-top-left-radius: 8px !important;
+        border-top-left-radius: 5px !important;
     }
 
     .wufoo table thead tr:first-child th:last-child,
     .wufoo table thead tr:first-child td:last-child {
-        border-top-right-radius: 8px !important;
+        border-top-right-radius: 5px !important;
+    }
+
+    .wufoo table tbody tr:last-child th:first-child,
+    .wufoo table tbody tr:last-child td:first-child {
+        border-bottom-left-radius: 5px !important;
+    }
+
+    .wufoo table tbody tr:last-child th:last-child,
+    .wufoo table tbody tr:last-child td:last-child {
+        border-bottom-right-radius: 5px !important;
     }
 
     .wufoo table thead th,
@@ -361,47 +454,42 @@ label[for="Field426"] {
         width: 100% !important;
         min-height: 48px !important;
     }
-/* REMOVE ALL PRODUCT HOVER / HIGHLIGHT COLOURS */
-.wufoo table tbody tr:hover,
-.wufoo table tbody tr:hover td,
-.wufoo table tbody tr:hover th,
-.wufoo table tbody td:hover,
-.wufoo table tbody th:hover,
-.wufoo table tbody td:first-child,
-.wufoo table tbody td:first-child:hover,
-.wufoo table tbody td:first-child *,
-.wufoo table tbody td:first-child *:hover,
-.wufoo table tbody td:first-child *:focus,
-.wufoo table tbody td:first-child *::before,
-.wufoo table tbody td:first-child *::after,
-.wufoo table tbody td:first-child *:hover::before,
-.wufoo table tbody td:first-child *:hover::after {
+}
+
+/* =========================================================
+   WUFOO LIKERT / MATRIX HOVER OVERRIDE
+   Wufoo applies #FFF7C0 directly to Likert rows and labels.
+   Keep the product matrix white on hover.
+   ========================================================= */
+
+.wufoo .likert tbody tr:hover td,
+.wufoo .likert tbody tr:hover th,
+.wufoo .likert tbody tr:hover label {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    color: var(--edge-black) !important;
+}
+
+.wufoo .likert tbody tr:hover td {
+    border-left-color: var(--edge-line) !important;
+}
+
+.wufoo .likert tbody th label,
+.wufoo .likert tbody td label,
+.wufoo .likert tbody tr:hover th label,
+.wufoo .likert tbody tr:hover td label {
     background: transparent !important;
     background-color: transparent !important;
     background-image: none !important;
     box-shadow: none !important;
-    text-shadow: none !important;
-    outline: none !important;
 }
-/* PRODUCT CELL MUST REMAIN WHITE */
-.wufoo table tbody td:first-child,
-.wufoo table tbody tr:hover td:first-child {
+
+/* Also neutralise alternate-row hover styling if Wufoo applies it */
+.wufoo .likert tbody tr.alt:hover td,
+.wufoo .likert tbody tr.alt:hover th,
+.wufoo .likert tbody tr.alt:hover label {
     background: #FFFFFF !important;
     background-color: #FFFFFF !important;
 }
-/* REMOVE ANY WUFOO HIGHLIGHT ELEMENTS */
-.wufoo table tbody td:first-child mark,
-.wufoo table tbody td:first-child ins,
-.wufoo table tbody td:first-child span,
-.wufoo table tbody td:first-child label,
-.wufoo table tbody td:first-child strong,
-.wufoo table tbody td:first-child b,
-.wufoo table tbody td:first-child p,
-.wufoo table tbody td:first-child div,
-.wufoo table tbody td:first-child a {
-    background: transparent !important;
-    background-color: transparent !important;
-    background-image: none !important;
-    box-shadow: none !important;
-}
-}
+
