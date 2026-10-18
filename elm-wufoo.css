@@ -361,4 +361,38 @@ label[for="Field426"] {
         width: 100% !important;
         min-height: 48px !important;
     }
+/* REMOVE ALL PRODUCT HOVER COLOURS */
+.wufoo table tbody tr:hover,
+.wufoo table tbody tr:hover td,
+.wufoo table tbody tr:hover th,
+.wufoo table tbody td:hover,
+.wufoo table tbody th:hover,
+.wufoo table tbody td:first-child:hover,
+.wufoo table tbody td:first-child *,
+.wufoo table tbody td:first-child *:hover,
+.wufoo table tbody td:first-child *:focus {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+/* KEEP PRODUCT CELLS WHITE */
+.wufoo table tbody td,
+.wufoo table tbody th,
+.wufoo table tbody tr:hover td,
+.wufoo table tbody tr:hover th {
+    background-color: #FFFFFF !important;
+}
+/* REMOVE WUFOO HIGHLIGHT FROM PRODUCT TEXT */
+.wufoo table tbody td:first-child strong,
+.wufoo table tbody td:first-child b,
+.wufoo table tbody td:first-child span,
+.wufoo table tbody td:first-child label,
+.wufoo table tbody td:first-child p,
+.wufoo table tbody td:first-child div {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
 }
