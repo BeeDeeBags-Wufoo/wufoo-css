@@ -491,3 +491,20 @@ form.wufoo li.likert tbody tr.alt:hover > td {
     background-color: #FFFFFF !important;
 }
 
+/* =========================================================
+   CONFIRMED WUFOO LIKERT HOVER FIX
+   Tested directly in browser.
+   ========================================================= */
+
+.wufoo .likert tbody tr:hover td,
+.wufoo .likert tbody tr:hover th {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+}
+
+.wufoo .likert tbody tr:hover label {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    color: #111111 !important;
+}
+
