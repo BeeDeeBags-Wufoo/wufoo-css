@@ -455,3 +455,39 @@ label[for="Field426"] {
         min-height: 48px !important;
     }
 }
+
+/* =========================================================
+   FINAL FIX: WUFOO LIKERT / MATRIX HOVER
+   Wufoo applies a pale-yellow background to Likert rows and
+   labels on hover. These exact selectors override it.
+   ========================================================= */
+
+form.wufoo li.likert tbody tr:hover > th,
+form.wufoo li.likert tbody tr:hover > td {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    color: var(--edge-black) !important;
+}
+
+form.wufoo li.likert tbody tr:hover label,
+form.wufoo li.likert tbody tr:hover label:hover,
+form.wufoo li.likert tbody tr:hover label * {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+form.wufoo li.likert tbody tr:hover > td {
+    border-left-color: var(--edge-line) !important;
+}
+
+/* Covers alternate Likert rows as well */
+form.wufoo li.likert tbody tr.alt:hover > th,
+form.wufoo li.likert tbody tr.alt:hover > td {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+}
+
