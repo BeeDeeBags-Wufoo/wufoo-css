@@ -215,15 +215,12 @@ label[for="Field426"] {
 /* Product images */
 .wufoo table img {
     display: block !important;
-    width: auto !important;
-    max-width: 220px !important;
     height: auto !important;
-    max-height: 240px !important;
+    max-width: 100% !important;
     object-fit: contain !important;
     margin: 0 auto 14px !important;
     background: transparent !important;
 }
-
 /* Product headings */
 .wufoo table tbody td:first-child strong,
 .wufoo table tbody td:first-child b,
@@ -428,11 +425,11 @@ label[for="Field426"] {
         font-size: 12px !important;
     }
 
-    .wufoo table img {
-        max-width: 145px !important;
-        max-height: 175px !important;
-        margin-bottom: 10px !important;
-    }
+   .wufoo table img {
+    max-width: 100% !important;
+    height: auto !important;
+    margin-bottom: 10px !important;
+}
 
     .wufoo table tbody td:first-child strong,
     .wufoo table tbody td:first-child b,
